@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <style>
+        .box{
+            width: 120px;
+            height: 165px;
+            background-color: darkgoldenrod;
+            margin: auto;
+        }
+
+        .bulb.red::after {
+            background-color: rgba (255, 0,0, 0.5);
+        }
+        .bulbRed::after {
+            content: '';
+            width: 45px;
+            height: 45px;
+            background-color: white;
+            z-index: 6;
+            position: absolute;
+            border-radius: 50px;
+            top: 6px;
+        }
+        .redLight {
+            border-top: 10px;
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            border-radius: 25px;
+            margin: auto;
+              }
+        .redLight:hover   {background-color: blue;
+        }.yellowLight:hover {background-color: blue;
+        }.greenLight:hover{background-color: blue;}
+
+        .yellowLight {
+            width: 50px;
+            height: 50px;
+            background-color: yellow;
+            border-radius: 25px;
+            margin: auto;
+        }
+        .greenLight {
+            width: 50px;
+            height: 50px;
+            background-color: green;
+            border-radius: 25px;
+            margin: auto;
+        }
+        </style>
+    <title>
+        stoplight
+    </title>
+</head>
+<body>
+
+<div class="box">
+
+    <div id="shim">
+        </div>
+
+    <div class="light">
+        <div class="redLight"></div>
+        <div class="hood"></div>
+        <div class="bulbRed"></div>
+    </div>
+    <div class="light">
+        <div class="yellowLight"></div>
+        <div class="hood"></div>
+        <div class="bulbYellow"></div>
+    </div>
+    <div class="light">
+        <div class="greenLight"></div>
+        <div class="hood"></div>
+        <div class="bulbGreen"></div>
+    </div>
+
+    </div>
+
+</body>
+</html>
